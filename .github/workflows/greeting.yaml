@@ -1,0 +1,9 @@
+name: Greeting          # Workflow name
+on: push                # Trigger
+jobs:
+  greet:                # Job
+    runs-on: ubuntu-latest   # Machine
+
+    steps:
+      - name: "greet user"   # Step name
+        run: echo "Hello world!"  # Command
