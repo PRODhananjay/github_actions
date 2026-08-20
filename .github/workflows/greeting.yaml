@@ -1,9 +1,9 @@
-name: Greeting          # Workflow name
-on: push                # Trigger
+name: Greeting         
+# on: push  
+on: workflow_dispatch              
 jobs:
-  greet:                # Job
-    runs-on: ubuntu-latest   # Machine
-
+  greet:                
+    runs-on: ubuntu-latest   
     steps:
-      - name: "greet user"   # Step name
-        run: echo "Hello world!"  # Command
+      - name: "greet user"   
+        run: echo "Hello world!"  
